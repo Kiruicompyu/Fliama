@@ -6,6 +6,7 @@
     <title>Fliama | Service Providers</title>
 </head>
 <body>
+    <!-- Install an extension (better comments) to better visualize the page's notes. -->
     <!-- 
     * This is the html file which contains markup for the actual and final look of the system.
     * It has been linked to an external css and javascript file to minimise the file size.
@@ -16,11 +17,10 @@
     <!-- 
         * Home Section
     - This section will contain the first partition ( home ).
-
     -->
     <section class="home" >
         <!-- * Navbar  -->
-        <div class="navbar">
+        <div class="titlebar">
             <!-- * Airline Logo -->
             <div class="logo">
                 <h1>
@@ -28,12 +28,65 @@
                     Fliama
                 </h1>
             </div>
-            
-            
+            <div class="navbar">
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#About">About</a>
+                        </li>
+                        <li>
+                            <a href="#Location">Location</a>
+                        </li>
+                        <li>
+                            <a href="#Contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- 
+                todo: add link to social pages like github insta... using icons
+            -->
+            <div class="socials">
+                <ul>
+                    <li>
+                        <a href="https://github.com/Kiruicompyu/Fliama"> 
+                            <!-- * Should put an icon here for a star from fa icons -->
+                            Star</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
+    <!-- * About Section
+        - This is the section that will contain any info about our organisation that might be relevant to our users.
+    -->
 
+    <section id="About">
+        <!-- Should contain a few cards with info about our organisation in a precise foramat.
+                side note: the cards should take the samwe styles.
 
-</body>
+        -->
+        <!-- ^ How about adding it using javascript since it just replicates and would use the same styles...akili mti yangu 😂 -->
+
+    </section>
+
+    <!-- * Contact section *
+        ^ this page should contain a minimalistic page where users can submit their contact info and reach out to the site admins.
+        ^ I am thinking of moving the whole contact page into a new html page 
+    -->
+    <section id="contact">
+        <!-- Simple form with two fieldsets  -->
+        <form action="" method="post">
+            <fieldset>
+                <legend></legend>
+            </fieldset>
+        </form>
+    </section>
+
+<script src="script.js"></script>
+</body>`````
 </html>
