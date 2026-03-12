@@ -15,7 +15,7 @@ const AboutData = {
 }
 // actual population of data
 aboutSection.innerHTML = `
-    // ^ i am going to write it in the html then paste the snippet here.
+    // todo: write it in the html then paste the snippet here.
 
 `
 aboutSection.style

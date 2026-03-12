@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is just a mock site and not an actual working site. Do not fill in any important information in it.">
     <title>Fliama | Service Providers</title>
+
 </head>
 <body>
     <!-- Install an extension (better comments) to better visualize the page's notes. -->
@@ -81,12 +83,31 @@
     <section id="contact">
         <!-- Simple form with two fieldsets  -->
         <form action="" method="post">
-            <fieldset>
-                <legend></legend>
+            <fieldset class="inputs" >
+                <legend>Contact Us</legend>
+                <div>
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname" placeholder="Please enter your first name here: ">
+                </div>
+                <div>
+                    <label for="name">Surname</label>
+                    <input type="text" name="sname" id="sname" placeholder="Please enter your surname here: ">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Please enter your email here: ">
+                </div>
+                <div>
+                    <!-- ^ actual place to input the message. -->
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your comment(s) here...."></textarea>
+                </div>
+            </fieldset>
+            <fieldset class="button">
+                <button type="submit" id="submit-btn">Submit</button>
             </fieldset>
         </form>
     </section>
 
 <script src="script.js"></script>
-</body>`````
+</body>
 </html>
