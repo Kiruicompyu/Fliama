@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body{
+    scroll-behavior: smooth;
+
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: #7f7676;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 3rem;
+    
+}
+p{
+    font-size: 1.5rem;
+    color: #efeaea;
+}
+form{
+    background: #bbb8b8;
+    width: 80%;
+    height: 460px;
+    box-shadow: 40px 40px 60px grey,
+                -40px -40px 60px grey;
+    border: none;
+    border-radius: 10px;
+    padding: 40px 60px;
+    margin: 20px;
+}
+form .text-area label,
+form .left label{
+    font-size: 22px;
+    color: #333;
+    font-weight: 540;
+    font-family:  monospace;
+}
+form .left input{
+    width: 80%;
+    height: 40px;
+    padding: 2px 4px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    font-size: 21px;
+    outline: none;
+}
+form .left{
+    float: left;
+    width: 50%;
+}
+form .text-area{
+    float: right;
+    width: 50%;
+}
+form .text-area textarea{
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 5px;
+}
+form .text-area ul li{
+    list-style: none;
+}
+form input[type="submit"]{
+    width: 180px;
+    height: 40px;
+    font-size: 1.2rem;
+    background: #000;
+    color: bisque;
+    padding: 10px 40px;
+    margin: 40px 50px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+}

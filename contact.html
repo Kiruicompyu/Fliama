@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Service Providers.</title>
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
+    <h1>Contact Us</h1>
+    <p>If you have any questions or inquiries, please feel free to reach out to us:</p>
+    <form action="" method="post">
+        <div class="left">
+            <label for="fname">First Name:</label> <br><br>
+        <input type="text" id="fname" name="fname" required autofocus>
+        <br><br>
+            <label for="lname">Last Name:</label> <br><br>
+        <input type="text" id="lname" name="lname" required>
+        <br><br>
+        <label for="email">Email:</label><br><br>
+        <input type="email" id="email" name="email" required>
+        
+        </div>
+        <div class="text-area">
+            
+        <label for="message">Message:</label> <br><br>
+        <textarea id="message" name="message" cols="70" rows="10"></textarea>
+        <br><br>
+        
+        <ul>
+        <li>Email: <a href="mailto:info@serviceproviders.com">info@serviceproviders.com</a></li>
+        <!-- 
+        todo: add more contact details like phone number, physical address, etc. But this time using icons and short text. For example, a phone icon followed by the phone number, a location icon followed by the physical address, etc.
+        <li>Email: <a href="mailto:info@serviceproviders.com">info@serviceproviders.com</a></li>
+        <li>Email: <a href="mailto:info@serviceproviders.com">info@serviceproviders.com</a></li> -->
+    </ul>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
     
+
+
 </body>
 </html>
