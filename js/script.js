@@ -1,15 +1,15 @@
 
-let result = confirm("Do you love God?....🫠🙃");
+// let result = confirm("Do you love God?....🫠🙃");
 
-if (result) {
-    alert("I am glad to hear that! Keep loving God and stay blessed.🙏😊");
-} else {
-    alert("Alright let's just continue🙁")
-}
+// if (result) {
+//     alert("I am glad to hear that! Keep loving God and stay blessed.🙏😊");
+// } else {
+//     alert("Alright let's just continue🙁")
+// }
 
 // * about section cards
 // const aboutSection = document.getElementById("About")
-// // json format for the data to be populated 
+// // json format for the data to be populated
 // const AboutData = {
 //     "set1": {
 //         "id": 1
@@ -21,3 +21,4 @@ if (result) {
 //     // todo: write it in the html then paste the snippet here.
 
 // `
+

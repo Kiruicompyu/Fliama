@@ -12,6 +12,7 @@ body{
     color: #fff;
     height: 100vh;
     width: 100vw;
+    user-select: none;
 }
 .titlebar{
     position: fixed;
@@ -86,9 +87,8 @@ section:nth-child(even){
     background: #222;
 }
 
-
-    
-    .hero{
+/* * Hero section stuling */
+.hero{
     height:100vh;
     /* background-image:url("assets/hero.jpg"); */
     /* background-size:cover; */
@@ -98,49 +98,59 @@ section:nth-child(even){
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    }
-    
-    .hero-overlay{
+}
+
+.hero-overlay{
     position:absolute;
     width:100%;
     height:100%;
     background:rgba(0,0,0,0.45);
-    }
-    
-    .hero-content{
+}
+
+.hero-content{
     position:relative;
     text-align:center;
-    }
-    
-    .hero-content h1{
+}
+
+.hero-content h1{
     font-size:70px;
     font-weight:300;
     margin-bottom:30px;
-    }
-    
-    .hero-buttons button{
+}
+
+.hero-buttons button{
     margin:10px;
     padding:12px 25px;
     border-radius:25px;
     font-size:14px;
     cursor:pointer;
-    }
-    
-    .primary{
+}
+
+.primary{
     background:white;
     border:none;
     color:black;
-    }
-    
-    .secondary{
+    transition: all 0.15s;
+}
+
+.secondary{
     background:transparent;
     border:1px solid white;
     color:white;
-    }
-    
-    /* BOOKING BAR */
-    
-    .booking-bar{
+    transition: all 0.15s;
+}
+.secondary:hover{
+        background: #fff;
+        color: #000;
+}
+.secondary:active,
+.primary:active{
+        background-color: #aaa;
+}
+
+   /* BOOKING BAR */
+
+.booking-bar{
     position:absolute;
     bottom:40px;
     width:80%;
@@ -148,13 +158,13 @@ section:nth-child(even){
     background:black;
     border-radius:18px;
     padding:20px;
-    }
-    
-    .trip-type{
+}
+
+.trip-type{
     margin-bottom:15px;
-    }
-    
-    .trip-type button{
+}
+
+.trip-type button{
     background:#222;
     color:white;
     border:none;
@@ -162,41 +172,53 @@ section:nth-child(even){
     border-radius:20px;
     margin-right:10px;
     cursor:pointer;
-    }
-    
-    .trip-type .active{
+    transition: all 0.15s ease-in-out;
+}
+
+.trip-type .active{
     background:white;
     color:black;
-    }
-    
-    .booking-fields{
+}
+.trip-type .active:active{
+        background: #aaa;
+}
+
+.trip-type #one-way:active{
+        background: #b9afaf;
+}
+.booking-fields{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    }
-    
-    .field{
+}
+
+.field{
     flex:1;
     padding:10px 20px;
-    }
-    
-    .field label{
+}
+
+.field label{
     display:block;
     font-size:12px;
     color:#aaa;
-    }
-    
-    .field span{
+}
+
+.field span{
     font-size:20px;
-    }
-    
-    .search-btn{
+}
+
+.search-btn{
     background:#333;
     color:white;
     border:none;
     border-radius:12px;
     width:50px;
-    height:50px;
+    height:70px;
     font-size:20px;
     cursor:pointer;
-    }
+    transition: all .15s ease-in-out;
+}
+.search-btn:active{
+        background: #a49f9f;
+        color: #111
+}

@@ -65,7 +65,7 @@ form .text-area textarea{
     border: none;
     border-radius: 10px;
     outline: none;
-    padding: 5px;
+    padding: 15px 10px;
 }
 form .text-area ul li{
     list-style: none;
@@ -83,4 +83,26 @@ form input[type="submit"]{
     outline: none;
     text-align: center;
     cursor: pointer;
+}
+
+/* * Styles for smaller devices.. */
+@media (width < 1200px) {
+    form .textarea{
+        float: left;
+        width: 100%;
+    }
+
+    form{
+        width: 80%;
+        height: fit-content;
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+    }
+    form .left{
+        width: 100%;
+
+    }
+    form .left input{
+        width: 100%;
+    }
 }

@@ -7,24 +7,25 @@
     <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
+
     <h1>Contact Us</h1>
     <p>If you have any questions or inquiries, please feel free to reach out to us:</p>
-    <form action="" method="post">
+    <form action="" method="post" id="form">
         <div class="left">
             <label for="fname">First Name:</label> <br><br>
-        <input type="text" id="fname" name="fname" required autofocus>
+        <input type="text" id="fname" name="fname" required autofocus autocomplete="name">
         <br><br>
             <label for="lname">Last Name:</label> <br><br>
-        <input type="text" id="lname" name="lname" required>
+        <input type="text" id="lname" name="lname" required autocomplete="given-name">
         <br><br>
         <label for="email">Email:</label><br><br>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" required autocomplete="email">
         
         </div>
         <div class="text-area">
             
         <label for="message">Message:</label> <br><br>
-        <textarea id="message" name="message" cols="70" rows="10"></textarea>
+        <textarea id="message" name="message" cols="70" rows="10" placeholder="Type your message here....." autocomplete="off" required></textarea>
         <br><br>
         
         <ul>
@@ -37,8 +38,8 @@
         </div>
         <input type="submit" value="Submit">
     </form>
-    
 
 
+    <script src="js/contact.js"></script>
 </body>
 </html>
