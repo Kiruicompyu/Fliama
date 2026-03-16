@@ -30,4 +30,4 @@ form.addEventListener('submit', (event) => {
 
 
 
-console.clear() // to clean the console
+// console.clear() // to clean the console
