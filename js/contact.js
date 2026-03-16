@@ -15,6 +15,7 @@ function validateForm() {
     if (message.value.trim() === " ") {
         alert("Kindly type in your message to submit!");
         message.focus();
+        return false;
     } else {
         window.location.href("../index.html")
     }
@@ -25,3 +26,8 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
     validateForm();
 })
+
+
+
+
+console.clear() // to clean the console

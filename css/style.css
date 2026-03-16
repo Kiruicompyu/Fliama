@@ -11,8 +11,10 @@ body{
     background: #000;
     color: #fff;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     user-select: none;
+    scrollbar-width: none;
+
 }
 .titlebar{
     position: fixed;
@@ -98,6 +100,7 @@ section:nth-child(even){
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    width: 100%;
 }
 
 .hero-overlay{
@@ -148,7 +151,7 @@ section:nth-child(even){
         background-color: #aaa;
 }
 
-   /* BOOKING BAR */
+/* * Booking bar styling  */
 
 .booking-bar{
     position:absolute;
@@ -221,4 +224,125 @@ section:nth-child(even){
 .search-btn:active{
         background: #a49f9f;
         color: #111
+}
+
+/* * About section styling */
+#whyUs,
+#About{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 40px 60px;
+}
+#About{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#About .cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px;
+
+}
+#About .card{
+    margin: 20px;
+    background: #333;
+    width: fit-content;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid #a49f9f;
+    outline: none;
+    border-radius: 20px;
+}
+#About .card .learn-btn{
+    background: #6e4444;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+
+}
+#About .card h2{
+    color: #fb7a7a;
+}
+
+/* * Why Us page styling. */
+#whyUs{
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+#whyUs .gallery{
+    /* display: inline; */
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+    width: auto;
+    gap: 20px;
+    margin-left: 60px;
+}
+#whyUs .gallery .sheet{
+    height: 100%;
+    width: 700px;
+    background: #555050 ;
+    box-shadow: 2px 2px 20px #aaa;
+    border-radius: 10px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* * foooter styling */
+.footer{
+    height: 50%;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: #716a6a;
+    font-size: 19px;
+    width: 100%;
+}
+.footer .row1{
+    margin-bottom: 20px;
+}
+.footer .row1 .cols{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-left: 40px;
+}
+.footer .row1 .cols h3{
+    color: #b76565;
+    margin-bottom: 10px;
+}
+.footer .row2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.footer footer .row2 .right-footer a,
+.footer footer .row1 .cols .col1 ul li a,
+.footer footer .row1 .cols .col2 ul li a,
+.footer footer .row1 .cols .col3 ul li a,
+.footer .row2 .footer-legal a{
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: beige;
+}
+.footer footer .row1 .cols .col1 ul li,
+.footer footer .row1 .cols .col2 ul li ,
+.footer footer .row1 .cols .col3 ul li {
+    list-style-type: none;
+    gap: 20px;
+    line-height: 2rem;
 }
