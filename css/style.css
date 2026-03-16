@@ -82,9 +82,9 @@ section{
     font-size: 48px;
     
 }
-section:nth-child(odd){
+/* section:nth-child(odd){
     background: #111;
-}
+} */
 section:nth-child(even){
     background: #222;
 }
@@ -92,9 +92,10 @@ section:nth-child(even){
 /* * Hero section stuling */
 .hero{
     height:100vh;
-    /* background-video: url('../assets/videos/day-vid.mp4') no-repeat; */
-    /* background-size:cover; */
-    /* background-position:center; */
+    /* background-color: aqua; */
+    background-image: url("../assets/images/airplane-mirror.jpg");
+    background-size:cover;
+    background-position:center;
     position:relative;
     display:flex;
     flex-direction:column;

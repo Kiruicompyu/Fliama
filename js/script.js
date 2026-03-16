@@ -42,19 +42,21 @@ leftFooter.innerHTML = `
 // setBackgroundVideo();
 
 
-document.addEventListener("DOMContentLoaded", function () {
 
-    const video = document.getElementById("bg-video");
-    const hour = new Date().getHours();
 
-    let videoSrc;
+// document.addEventListener("DOMContentLoaded", function () {
 
-    if (hour >= 6 && hour < 18) {
-        videoSrc = "../assets/videos/day-vid.mp4";
-    } else {
-        videoSrc = "../assets/videos/night-vid.mp4";
-    }
+//     const video = document.getElementById("bg-video");
+//     const hour = new Date().getHours();
 
-    video.src = videoSrc;
+//     let videoSrc;
 
-});
+//     if (hour >= 6 && hour < 18) {
+//         videoSrc = "../assets/videos/day-vid.mp4";
+//     } else {
+//         videoSrc = "../assets/videos/night-vid.mp4";
+//     }
+
+//     video.src = videoSrc;
+
+// });
