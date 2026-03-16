@@ -93,7 +93,7 @@ section:nth-child(even){
 .hero{
     height:100vh;
     /* background-color: aqua; */
-    background-image: url("../assets/images/airplane-mirror.jpg");
+    /* background-image: url("../assets/images/airplane-mirror.jpg"); */
     background-size:cover;
     background-position:center;
     position:relative;
