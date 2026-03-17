@@ -444,13 +444,13 @@ section:nth-child(even){
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 3px;
+        padding:12px 25px;
         height: 40px;
         width: 290px;
         border-radius: 19px;
         border: none;
         outline: none;
-        margin-left: 3px;
+        margin-left: 5px;
         transition: all 0.15s ease-in-out ;
         cursor: pointer;
     }
