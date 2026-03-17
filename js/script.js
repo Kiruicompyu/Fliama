@@ -60,3 +60,24 @@ document.addEventListener("DOMContentLoaded", function () {
     video.src = videoSrc;
 
 });
+
+
+// const menuLinks = document.querySelectorAll('.menu a');
+// const details = document.querySelector('details');
+
+// menuLinks.forEach(link => {
+//     link.addEventListener('click', () => {
+//         details.removeAttribute('open');
+//     });
+// });
+
+
+document.querySelectorAll('.menu a').forEach(link => {
+    link.addEventListener('click', (e) => {
+        const menu = link.closest('details');
+
+        setTimeout(() => {
+            menu.removeAttribute('open');
+        }, 150);
+    });
+});

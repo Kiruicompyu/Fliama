@@ -409,11 +409,91 @@ section:nth-child(even){
     .titlebar .socials{
         display: none;
     }
+    /* * Ham menu */
     /* making the ham appear */
     .titlebar .ham{
-        display: inline-block;
-        cursor: pointer;
+        display: block;
     }
+    /* Reset default marker */
+summary {
+  list-style: none;
+  cursor: pointer;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Hamburger container */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30px;
+  height: 25px;
+  gap: 5px;
+}
+
+/* Lines */
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background: rgb(231, 224, 224);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Animate into X when open */
+details[open] .hamburger span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+
+details[open] .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+details[open] .hamburger span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Menu styling */
+.menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: #111;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  min-width: 180px;
+  backdrop-filter: blur(10px);
+  background: rgba(0,0,0,0.8);
+
+  /* Animation setup */
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* Show menu smoothly */
+details[open] .menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Links */
+.menu a {
+  display: block;
+  margin: 10px 0;
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.menu a:hover {
+  color: white;
+}
     /* ^ reducing the size of the font in a small screen */
     .hero-content h1{
         font-size: 26px;
