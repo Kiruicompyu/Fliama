@@ -450,7 +450,7 @@ section:nth-child(even){
         border-radius: 19px;
         border: none;
         outline: none;
-        margin-left: 5px;
+        margin: auto;
         transition: all 0.15s ease-in-out ;
         cursor: pointer;
     }
