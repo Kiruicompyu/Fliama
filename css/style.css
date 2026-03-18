@@ -161,6 +161,9 @@ section:nth-child(even){
         background: #fff;
         color: #000;
 }
+.popup {
+    display: none;
+}
 .secondary:active,
 .primary:active{
         background-color: #aaa;
