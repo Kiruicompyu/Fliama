@@ -119,7 +119,7 @@ section:nth-child(even){
     position:absolute;
     width:100%;
     height:100%;
-    background: url(../assets/images/airplane-mirror.jpg) no-repeat center center/cover fixed;
+    background: linear-gradient(145deg, #0f172a, #1e293b);
 }
 
 .hero-content{
@@ -257,7 +257,7 @@ section:nth-child(even){
 }
 #About .cards{
     display: grid;
-    grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+    grid-template-columns: repeat(autofit, minmax(260px, 1fr));
     gap: 25px;
     padding: 40px;
 }
@@ -265,7 +265,8 @@ section:nth-child(even){
     margin: 20px;
     background: linear-gradient(145deg, #0f172a, #1e293b);
     width: fit-content;
-    height: 300px;
+    height: auto;
+    min-height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -293,6 +294,7 @@ section:nth-child(even){
 
     -webkit-mask-composite: xor;
     mask-composite: exclude;
+    pointer-events: none;
 }
 .card:hover {
     transform: translateY(-8px) scale(1.02);
@@ -301,6 +303,7 @@ section:nth-child(even){
 .card p {
     color: #94a3b8;
     line-height: 1.6;
+    margin-bottom: 15px;
 }
 #About .card .learn-btn{
     background: linear-gradient(45deg, #00f5d4, #9b5cff);
@@ -313,7 +316,7 @@ section:nth-child(even){
 
 }
 #About .card .learn-btn:hover{
-    opacity: 0.8;
+    opacity: 0.9;
     transform: scale(1.05);
 }
 
@@ -324,43 +327,142 @@ section:nth-child(even){
 
 /* * Why Us page styling. */
 #whyUs{
-    width: 100vw;
+    width: 100%;
+    margin: 100px auto;
+    padding: 0 20px;
     scrollbar-width: thin;
     scroll-behavior: smooth;
     background: #111;
-}
-#whyUs .gallery{
     display: flex;
-    flex-direction: row;
-    height: 60%;
-    gap: 20px;
-}
-#whyUs .gallery .sheet{
-    height: 100%;
-    width: 700px;
-    background-image: url("../assets/images/airplane-mirror.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: 2px 2px 10px #aaa;
-    border-radius: 10px;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-direction: column;
+}
+.why-us h1 {
     text-align: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: #00f5d4;
+}
+
+
+.why-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .why-header h1 {
+    font-size: 2.2rem;
+    color: #00f5d4;
+    margin-bottom: 10px;
+  }
+  
+  .why-header p {
+    color: #94a3b8;
+    font-size: 1rem;
+  }
+
+.slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+.choreo {
+    position: relative;
+    min-width: 400px;
+    height: 240px;
+    border-radius: 20px;
+    overflow: hidden;
+    border-radius: 20px;
+    scroll-snap-align: center;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.choreo:hover {
+    transform: scale(1.03);
+    transition: 0.3s ease;
+}
+
+.choreo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.85),
+        rgba(0,0,0,0.2),
+        transparent
+    );
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    transform: translateY(60%);
+    transition: 0.4s ease;
+}
+.choreo:hover .overlay {
+    transform: translateY(0);
+}
+
+.choreo:hover img {
+    transform: scale(1.1);
+}
+.overlay h2 {
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
     opacity: 0.8;
-    transition: all 0.15s ease-in;
 }
-#whyUs .gallery .sheet:hover{
-    scale: 1.05;
-    margin: -10px 40px;
+
+.overlay button {
+    align-self: flex-start;
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: none;
+    background: #00f5d4;
+    cursor: pointer;
 }
-#whyUs .gallery .sheet h3{
-    color: #ec4848;
-    font-size: 1.5rem;
-}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .dots span {
+    width: 10px;
+    height: 10px;
+    background: #555;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dots span.active {
+    background: #00f5d4;
+  }
+
+
+
 
 /* * foooter styling */
 .footer{

@@ -44,3 +44,24 @@ document.querySelectorAll('.menu a').forEach(link => {
         }, 150);
     });
 });
+
+
+const slider = document.querySelector('.slider');
+
+slider.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    slider.scrollLeft += e.deltaX;
+});
+
+
+const cards = document.querySelectorAll('.choreo');
+const dots = document.querySelectorAll('.dots span');
+
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        cards[index].scrollIntoView({
+            behavior: 'smooth',
+            inline: 'center'
+        });
+    });
+});
