@@ -11,38 +11,9 @@ leftFooter.innerHTML = `
     <p> &copy; ${copyrightYear} All rights reserved. </p>
 `
 
-// decide what video to show on the home page background depending on the time of the day
-// const video = document.getElementById("bg-video");
-// const source = document.getElementById("video-source");
-
-// const hour = new Date().getHours();
-
-// if (hour >= 6 && hour < 18) {
-//     source.src = "../assets/videos/day-vid.mp4";
-// } else {
-//     source.src = "../assets/videos/night-vid.mp4";
-// }
-
-// video.load();
-
-// function setBackgroundVideo() {
-
-//     const hour = new Date().getHours();
-//     const videoSource = document.getElementById("video-source");
-//     const video = document.getElementById("bg-video");
-
-//     const videoFile = (hour >= 6 && hour < 18)
-//         ? "../assets/videos/day-vid.mp4"
-//         : "../assets/videos/night-vid.mp4";
-
-//     videoSource.src = videoFile;
-//     video.load();
-// }
-
-// setBackgroundVideo();
 
 
-
+// Background video depending on the time of the day
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -62,14 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// const menuLinks = document.querySelectorAll('.menu a');
-// const details = document.querySelector('details');
-
-// menuLinks.forEach(link => {
-//     link.addEventListener('click', () => {
-//         details.removeAttribute('open');
-//     });
-// });
 
 
 document.querySelectorAll('.menu a').forEach(link => {

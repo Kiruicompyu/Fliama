@@ -1,5 +1,5 @@
 
-
+// console.clear() // to clean the console
 
 // contact form validation...
 const form = document.getElementById("form");
@@ -30,4 +30,3 @@ form.addEventListener('submit', (event) => {
 
 
 
-// console.clear() // to clean the console
