@@ -38,7 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
 document.querySelectorAll('.menu a').forEach(link => {
     link.addEventListener('click', (e) => {
         const menu = link.closest('details');
-
         setTimeout(() => {
             menu.removeAttribute('open');
         }, 150);
