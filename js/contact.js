@@ -1,32 +1,17 @@
 
-// console.clear() // to clean the console
+const form = document.getElementById('form');
 
-// contact form validation...
-const form = document.getElementById("form");
-const firstName = document.getElementById("fname");
-const lastName = document.getElementById("lname");
-const email = document.getElementById("email");
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
 
+    const btn = form.querySelector('button');
+    btn.textContent = "Sending...";
+    
+    
 
-function validateForm() {
-    // check that all fields are filled in is already done by the required attribute
-    // The text area is however, not catered for...therefore,
-    const message = document.getElementById("message");
-    if (message.value.trim() === " ") {
-        alert("Kindly type in your message to submit!");
-        message.focus();
-        return false;
-    } else {
-        window.location.href("../index.html")
-    }
-}
+    setTimeout(() => {
+        btn.textContent = "Message Sent ✅";
+        btn.style.background = "#22c55e";
+    }, 1500);
 
-// adding a submit event-listener first for the form
-form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    validateForm();
-})
-
-
-
-
+});

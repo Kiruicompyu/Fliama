@@ -88,8 +88,8 @@ section{
     align-items: center;
     justify-content: center;
     font-size: 48px;
-    
 }
+
 section:nth-child(odd){
     background: #df4141;
 }
@@ -246,28 +246,32 @@ section:nth-child(even){
 #About{
     font-size: 16px;
     font-weight: 500;
-    padding: 40px 60px;
 }
 #About{
     display: flex;
     flex-direction: column;
-    max-height: 100%;
+    padding: 80px 20px;
+    margin: 0;
+    gap: 40px;
+    min-height: auto;
     text-align: center;
     background: radial-gradient(circle at top, #0f172a, #020617);
-    overflow: hidden;
+    overflow: visible;
+}
+#About h2{
+    margin-top: 0;
 }
 #About .cards{
     display: grid;
-    grid-template-columns: repeat(autofit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 25px;
-    padding: 40px;
+    /* padding: 40px; */
 }
 #About .card{
-    margin: 20px;
     background: linear-gradient(145deg, #0f172a, #1e293b);
-    width: fit-content;
+    width: 100%;
     height: auto;
-    min-height: 300px;
+    min-height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -279,7 +283,7 @@ section:nth-child(even){
     position: relative;
     padding: 25px;
     transition: 0.3s ease;
-    overflow: hidden;
+    overflow: visible;
 }
 .card::before {
     content: "";
@@ -335,7 +339,8 @@ section:nth-child(even){
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100%;
+    min-height: 100vh;
+    margin-bottom: 80px;
 }
 
 
@@ -362,8 +367,13 @@ section:nth-child(even){
     scroll-snap-type: x mandatory;
     padding: 20px;
     mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-}
+    scroll-behavior: smooth;
+    cursor: grab;
 
+}
+.slider:active{
+    cursor: grabbing;
+}
 .slider::-webkit-scrollbar {
     display: none;
 }
@@ -377,6 +387,7 @@ section:nth-child(even){
     scroll-snap-align: center;
     cursor: pointer;
     flex-shrink: 0;
+    scroll-snap-stop: always;
 }
 .choreo:hover {
     transform: scale(1.03);
@@ -453,7 +464,7 @@ section:nth-child(even){
     transition: all 0.3s ease;
   }
   
-  .dots span:active{
+  .dots span.active{
     background: #00f5d4;
   }
 

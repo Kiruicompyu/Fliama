@@ -49,7 +49,7 @@ const slider = document.querySelector('.slider');
 
 slider.addEventListener('wheel', (e) => {
     e.preventDefault();
-    slider.scrollLeft += e.deltaX;
+    slider.scrollLeft += e.deltaY;
 });
 
 
@@ -58,9 +58,28 @@ const dots = document.querySelectorAll('.dots span');
 
 dots.forEach((dot, index) => {
     dot.addEventListener('click', () => {
-        cards[index].scrollIntoView({
-            behavior: 'smooth',
-            inline: 'center'
+
+        dots.forEach(d => d.classList.remove('active'));
+        dot.classList.add('active');
+
+        const card = cards[index];
+
+        const scrollPosition =
+            card.offsetLeft -
+            slider.offsetWidth / 2 +
+            card.offsetWidth / 2;
+
+        slider.scrollTo({
+            left: scrollPosition,
+            behavior: 'smooth'
         });
     });
 });
+
+const bookingBar = document.querySelector('.booking-bar');
+
+bookingBar.addEventListener('click', () => {
+    alert("This is just the UI...nothing to book yet!😊");
+    // todo maybe add a popup for something like a login request...
+});
+
