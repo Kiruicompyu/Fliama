@@ -23,9 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let videoSrc;
 
     if (hour >= 6 && hour < 18) {
-        videoSrc = "../assets/videos/day-vid.mp4";
+        videoSrc = "../assets/videos/Day-vid.mp4";
     } else {
-        videoSrc = "../assets/videos/night-vid.mp4";
+        videoSrc = "../assets/videos/Night-Vid.mp4";
     }
 
     video.src = videoSrc;
@@ -81,5 +81,98 @@ const bookingBar = document.querySelector('.booking-bar');
 bookingBar.addEventListener('click', () => {
     alert("This is just the UI...nothing to book yet!😊");
     // todo maybe add a popup for something like a login request...
+});
+
+// feeding the dev team section
+
+const devs = [
+    {
+        name: "Techkirui",
+        role: "Frontend Developer",
+        stack: "HTML, CSS, JavaScript",
+        image: "https://i.pravatar.cc/150?img=1",
+        github: "#"
+    },
+    {
+        name: "Brian Kimani",
+        role: "Backend Developer",
+        stack: "Node.js, Express",
+        image: "https://i.pravatar.cc/150?img=3",
+        github: "#"
+    },
+    {
+        name: "Mercy Wanjiku",
+        role: "UI/UX Designer",
+        stack: "Figma, CSS",
+        image: "https://i.pravatar.cc/150?img=2",
+        github: "#"
+    },
+    {
+        name: "Mercy Wanjiku",
+        role: "UI/UX Designer",
+        stack: "Figma, CSS",
+        image: "https://i.pravatar.cc/150?img=3",
+        github: "#"
+    },
+    {
+        name: "Mercy Wanjiku",
+        role: "UI/UX Designer",
+        stack: "Figma, CSS",
+        image: "https://i.pravatar.cc/150?img=4",
+        github: "#"
+    },
+    {
+        name: "Mercy Wanjiku",
+        role: "UI/UX Designer",
+        stack: "Figma, CSS",
+        image: "https://i.pravatar.cc/150?img=5",
+        github: "#"
+    }
+];
+
+
+const container = document.getElementById("dev-team");
+
+devs.forEach((dev) => {
+    console.log(dev);
+    const card = document.createElement("div");
+
+    card.classList.add("dev-card");
+
+    card.innerHTML = `
+  
+    <img src="${dev.image}" class="dev-img">
+
+    <h3 class="dev-name">
+      ${dev.name}
+    </h3>
+
+    <p class="dev-role">
+      ${dev.role}
+    </p>
+
+    <p class="dev-stack">
+      ${dev.stack}
+    </p>
+
+    <a href="${dev.github}" class="dev-btn">
+      View Profile
+    </a>
+
+  `;
+    card.style.opacity = "0";
+    card.style.transform = "translateY(20px)";
+
+    setTimeout(() => {
+        card.style.transition = "0.5s ease";
+        card.style.opacity = "1";
+        card.style.transform = "translateY(0)";
+    }, index * 150);
+
+    container.appendChild(card);
+
+    card.addEventListener("click", () => {
+    window.open(dev.github, "_blank");
+    });
 });
 
