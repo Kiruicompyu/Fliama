@@ -91,7 +91,7 @@ const devs = [
         role: "Frontend Developer",
         stack: "HTML, CSS, JavaScript",
         image: "https://i.pravatar.cc/150?img=1",
-        github: "#"
+        github: "https://github.com/Kiruicompyu"
     },
     {
         name: "Brian Kimani",
@@ -160,14 +160,14 @@ devs.forEach((dev) => {
     </a>
 
   `;
-    card.style.opacity = "0";
-    card.style.transform = "translateY(20px)";
+    // card.style.opacity = "0";
+    // card.style.transform = "translateY(20px)";
 
-    setTimeout(() => {
-        card.style.transition = "0.5s ease";
-        card.style.opacity = "1";
-        card.style.transform = "translateY(0)";
-    }, index * 150);
+    // setTimeout(() => {
+    //     card.style.transition = "0.5s ease";
+    //     card.style.opacity = "1";
+    //     card.style.transform = "translateY(0)";
+    // }, 100);
 
     container.appendChild(card);
 

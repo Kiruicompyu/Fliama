@@ -62,7 +62,6 @@ body{
 
 }
 .titlebar .socials ul li a:hover{
-    color: #b062e1;
     background: #000;
     border: 1px solid #00f5d4;
     box-shadow: 0 0 15px #00f5d4, 0 0 40px #00f5d4;
@@ -110,6 +109,8 @@ section:nth-child(even){
     object-fit:cover;
     z-index:-1;
 } */
+
+/* for the above snippet */
 .hero-overlay{
     position:absolute;
     width:100%;
@@ -336,7 +337,6 @@ section:nth-child(even){
     flex-direction: column;
     justify-content: space-evenly;
     min-height: 100vh;
-    margin-bottom: 80px;
 }
 
 
@@ -498,11 +498,12 @@ section:nth-child(even){
   
   .dev-card {
     /* background: #1e293b; */
-    background-color: #00f5d4;
+    background-color: #030414;
     padding: 22px;
     border-radius: 12px;
     transition: 0.3s ease;
     cursor: pointer;
+    border: 1px solid grey;
   }
   
   .dev-card:hover {
@@ -536,6 +537,28 @@ section:nth-child(even){
     color: #cbd5e1;
     font-size: 0.85rem;
   }
+
+  .dev-btn{
+    text-decoration: none;
+    color: #222;
+    background: #00f5d4;
+    padding: 8px 14px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 15px;
+    transition: 0.3s ease;
+  }
+
+  .dev-btn:hover{
+    background: #00d9ff;
+    color: #111;
+  }
+
+  .dev-btn:active{
+    background: #20db0f;
+    color: #111;
+  }
+
 /* * foooter styling */
 #footer{
     max-height: 50%;
