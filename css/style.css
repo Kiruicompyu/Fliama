@@ -40,6 +40,7 @@ body{
 }
 .titlebar .ham{
     display: none;
+    /* This ensures that the hamburger only shows when the screen width is small i.e user is on a phone */
 }
 .titlebar .navbar a,
 
@@ -332,7 +333,7 @@ section:nth-child(even){
 #whyUs{
     width: 100%;
     padding: 20px;
-    background: #111;
+    background: linear-gradient( 180deg ,#020617, #69aecc);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -414,7 +415,7 @@ section:nth-child(even){
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
+    align-items: center;
     transform: translateY(60%);
     transition: 0.4s ease;
 }
@@ -436,7 +437,7 @@ section:nth-child(even){
 }
 
 .overlay button {
-    align-self: flex-start;
+    align-self: center;
     padding: 8px 14px;
     border-radius: 8px;
     border: none;
@@ -465,7 +466,7 @@ section:nth-child(even){
   }
 
 
-  /* DEV TEAM SECTION */
+  /* * DEV TEAM SECTION */
 
   .dev-team-section {
     min-height: 100vh;
@@ -859,6 +860,9 @@ details[open] .menu {
 
 @media (max-width: 768px) {
 
+    .search-btn{
+        display: none;
+    }
     .dev-team-section {
       padding: 60px 15px;
     }
