@@ -54,10 +54,6 @@ form .left label{
     font-family:  monospace;
 }
 
-form .left{
-    width: 50%;
-}
-
 form .text-area ul li{
     list-style: none;
 }
@@ -107,9 +103,8 @@ button{
     color: #aaa;
     font-size: 14px;
     pointer-events: none;
-  
     transition: 0.3s ease;
-  }
+}
 /* .text-area{
     grid-column: span 1;
 } */
@@ -119,10 +114,8 @@ button{
 .input-group textarea:valid + label{
   top: -12px;
   left: 10px;
-  font-size: 16px;
+  font-size: 12px;
   color: #00f5d4;
-  background: #020d1700;
-  padding: 5px 5px;
 }
 .input-group .icon{
     position: absolute;
@@ -152,33 +145,36 @@ textarea{
     transform: translateY(-3px) scale(1.03);
     box-shadow: 0 10px 30px rgba(0,245,212,0.4);
   }
-/* * Styles for smaller devices.. */
 
+
+
+/* * Styles for devices with smaller width. */
 
 @media (max-width: 768px){    
-    button{
-    grid-column: span 2;
-  
-    /* background: linear-gradient(45deg, #00f5d4, #9b5cff); */
-    background: #EEAECA;
-    background: linear-gradient(327deg,rgba(238, 174, 202, 1) 0%, rgba(64, 128, 201, 1) 86%);
-    border: none;
-  
-    padding: 14px;
-    border-radius: 10px;
-  
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-  
-    transition: 0.3s;
-  }
-
-  .input-group{
-    width: 100%;
-  }
-  input[type="text"]{
-    padding: 14px 15px;
-    width: 100%;
-  }
+    form {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 30px 20px;
+      }
+    
+      .input-group,
+      .long,
+      .full {
+        grid-column: span 1;
+        width: 100%;
+      }
+    
+      button {
+        grid-column: span 1;
+      }
+      body{
+        gap: 20px;
+      }
+      h1{
+        font-size: 2.5rem;
+      }
+       p{
+        font-size: 1.2rem;
+        color: aquamarine;
+       }      
 }

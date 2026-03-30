@@ -88,13 +88,13 @@ bookingBar.addEventListener('click', () => {
 const devs = [
     {
         name: "Techkirui",
-        role: "Frontend Developer",
+        role: "Admin",
         stack: "HTML, CSS, JavaScript",
         image: "https://i.pravatar.cc/150?img=1",
         github: "https://github.com/Kiruicompyu"
     },
     {
-        name: "Brian Kimani",
+        name: "Engineer Feloo",
         role: "Backend Developer",
         stack: "Node.js, Express",
         image: "https://i.pravatar.cc/150?img=3",
@@ -109,14 +109,14 @@ const devs = [
     },
     {
         name: "Mercy Wanjiku",
-        role: "UI/UX Designer",
+        role: "Frontend Developer",
         stack: "Figma, CSS",
         image: "https://i.pravatar.cc/150?img=3",
         github: "#"
     },
     {
         name: "Mercy Wanjiku",
-        role: "UI/UX Designer",
+        role: "Quality Assurancce",
         stack: "Figma, CSS",
         image: "https://i.pravatar.cc/150?img=4",
         github: "#"
