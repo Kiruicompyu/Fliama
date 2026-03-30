@@ -98,7 +98,7 @@ const devs = [
         role: "Backend Developer",
         stack: "Node.js, Express",
         image: "https://i.pravatar.cc/150?img=3",
-        github: "#"
+        github: "https://github.com/kipngetich8337"
     },
     {
         name: "Mercy Wanjiku",

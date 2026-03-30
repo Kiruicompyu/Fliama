@@ -102,21 +102,20 @@ section:nth-child(even){
     align-items:center;
     width: 100%;
 }
-/* #bg-video{
+#bg-video{
+    position: absolute;
     top:0;
     left:0;
     width:100%;
     height:100%;
     object-fit:cover;
     z-index:-1;
-} */
+}
 
-/* for the above snippet */
 .hero-overlay{
     position:absolute;
     width:100%;
     height:100%;
-    background: linear-gradient(145deg, #0f172a, #1e293b);
 }
 
 .hero-content{
