@@ -134,7 +134,6 @@ const devs = [
 const container = document.getElementById("dev-team");
 
 devs.forEach((dev) => {
-    console.log(dev);
     const card = document.createElement("div");
 
     card.classList.add("dev-card");
