@@ -14,4 +14,9 @@ form.addEventListener('submit', (e) => {
         btn.style.background = "#22c55e";
     }, 1500);
 
+    window.alert("Message passed you'll be reirected to the home page!")
+    setInterval(() => {
+        window.history.back();
+    }, 2000);
+
 });

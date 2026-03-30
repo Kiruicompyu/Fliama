@@ -503,6 +503,7 @@ section:nth-child(even){
     transition: 0.3s ease;
     cursor: pointer;
     border: 1px solid grey;
+    display: flex;
   }
   
   .dev-card:hover {
@@ -517,9 +518,6 @@ section:nth-child(even){
     height: 80px;
     border-radius: 50%;
     margin-bottom: 15px;
-    float: left;
-    margin-right: 15px;
-    margin-top: 10px;
   }
   
   /* DEV TEXT */
